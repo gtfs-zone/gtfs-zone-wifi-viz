@@ -1,0 +1,121 @@
+/** viz.wifi.gtfs.zone's UI strings, in English: the source of the keys. */
+export const en = {
+  'app.title': 'viz.wifi.gtfs.zone - Wifi and cell coverage on transit',
+  'app.noWebgl':
+    'The map needs WebGL, which this browser has turned off or does not support.',
+  'app.loadFailed': 'Could not load the wifi data: {reason}',
+
+  'shell.loading': 'Loading data',
+  'shell.browse': 'Browse',
+  'shell.help': 'Help',
+
+  'nav.theme': 'Toggle theme',
+  'nav.guide': 'Guide',
+
+  'metric.label': 'Colour by',
+  'metric.wifi': 'Wifi',
+  'metric.latency': 'Latency',
+  'metric.cell': 'Cell',
+  'metric.wifiLegend': 'Share of samples with working wifi',
+  'metric.latencyLegend': 'Median latency of network tests (ms)',
+  'metric.cellLegend': 'Median cell signal level (0 to 4)',
+  'metric.noData': 'no data',
+
+  'tab.routes': 'Routes',
+  'tab.stations': 'Stations',
+
+  'routes.empty': 'No route has published data yet.',
+  'routes.sessions_one': '{count} session',
+  'routes.sessions_other': '{count} sessions',
+  'routes.bins_one': '{count} bin',
+  'routes.bins_other': '{count} bins',
+  'route.back': 'All routes',
+  'route.failed': 'Could not load this route: {reason}',
+  'route.unknown': 'This route is not in the published data.',
+  'route.length': '{km} km',
+  'route.along': 'Wifi along this trip',
+  'route.alongHint':
+    'Each segment is a bin of about 500 m, placed by distance along the route. Gaps have no published data.',
+  'route.bins': 'Bins',
+  'route.reports': 'Rider reports',
+  'route.noReports': 'No reports.',
+  'route.binRange': '{from} to {to} km',
+
+  'stations.empty': 'No station has published data yet.',
+  'station.back': 'All stations',
+  'station.unknown': 'This station is not in the published data.',
+  'station.checklist': 'Getting online',
+  'station.values': 'Measurements',
+
+  'values.sessions': 'Sessions',
+  'values.samples': 'Samples',
+  'values.wifiWorking': 'Working wifi',
+  'values.wifiConnected': 'Connected to wifi',
+  'values.rssi': 'Median wifi RSSI',
+  'values.netTests': 'Network tests',
+  'values.netSuccess': 'Network test success',
+  'values.latency': 'Median latency',
+  'values.portalTests': 'Tests behind a captive portal',
+  'values.noCell': 'Samples without cell',
+  'values.cellLevel': 'Median cell level',
+  'values.cellTech': 'Cell {tech}',
+  'values.cellTechValue': '{samples} samples, {dbm} dBm, level {level}',
+  'values.routes': 'Routes',
+  'values.bin': 'Bin {id}',
+
+  'report.outlets': 'Outlets',
+  'report.wifi': 'Wifi',
+  'report.portal': 'Captive portal',
+  'report.data_cap': 'Data cap',
+  'report.vpn_blocked': 'VPN blocked',
+  'answer.none': 'none',
+  'answer.present': 'present',
+  'answer.working': 'working',
+  'answer.absent': 'absent',
+  'answer.broken': 'broken',
+  'answer.works': 'works',
+  'answer.click': 'click through',
+  'answer.email': 'email',
+  'answer.account': 'account',
+  'answer.sms': 'SMS',
+  'answer.password': 'password',
+  'answer.paid': 'paid',
+  'answer.true': 'yes',
+  'answer.false': 'no',
+
+  'checklist.needed_email': 'Needed an email address',
+  'checklist.needed_account': 'Needed a full account',
+  'checklist.needed_sms': 'Needed an SMS code',
+  'checklist.needed_checkbox': 'Needed a checkbox',
+  'checklist.needed_password': 'Needed a password',
+  'checklist.needed_payment': 'Needed to pay',
+  'checklist.could_not_connect': 'Could not get it to work',
+  'checklist.counts': '{yes} yes, {no} no',
+
+  'footer.updated': 'Data updated {date}.',
+  'footer.license':
+    'Data: wifi.gtfs.zone contributors, {odbl}. Trip shapes and stops via {transitous} and {sources}. Map data {osm}.',
+  'footer.licenseFile': 'License file',
+  'footer.sources': 'its GTFS sources',
+
+  'help.welcome.label': 'Welcome',
+  'help.welcome.start': 'Get started!',
+  'help.welcome.title': 'Welcome to viz.wifi.gtfs.zone',
+  'help.welcome.lede':
+    'What wifi, cell coverage and seat outlets riders actually got on transit, collected by riders with the wifi.gtfs.zone app.',
+  'help.welcome.map': 'Map',
+  'help.welcome.mapText':
+    'Each line segment is a bin of about 500 m along the track. Colour it by working wifi, latency or cell level, and click it for the details.',
+  'help.welcome.route': 'Wifi along this trip',
+  'help.welcome.routeText':
+    'Pick a route to see its bins in order from the first stop to the last.',
+  'help.welcome.stations': 'Stations',
+  'help.welcome.stationsText':
+    'What it took to get online at a station: email, SMS, account, payment.',
+  'help.about.blurb':
+    'viz.wifi.gtfs.zone maps the open wifi.gtfs.zone dataset of onboard and station connectivity, tied to GTFS trips.',
+  'help.about.blurb2':
+    'Riders record trips with the Android app; uploads are anonymous and the published data is ODbL.',
+  'help.about.subject': 'viz.wifi.gtfs.zone feedback',
+  'help.about.sibling': 'realtime feeds on a map',
+} as const;
