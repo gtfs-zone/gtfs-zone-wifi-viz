@@ -1,0 +1,43 @@
+publiccodeYmlVersion: "0.4"
+
+name: GTFS.zone Wifi Viz
+url: "https://github.com/gtfs-zone/gtfs-zone-wifi-viz"
+landingURL: "https://viz.wifi.gtfs.zone"
+
+platforms:
+  - web
+
+categories:
+  - data-visualization
+
+developmentStatus: concept
+
+softwareType: "standalone/web"
+
+description:
+  en:
+    shortDescription: >
+      A map of crowdsourced wifi and cell coverage on transit trips.
+    longDescription: >
+      GTFS.zone Wifi Viz shows the open data published by wifi.gtfs.zone: a
+      map of onboard wifi, cell coverage and amenity reports along transit
+      routes, and a view of what to expect along a single trip. It is a
+      static single-page app with no backend of its own.
+    features:
+      - Map of wifi and cell coverage along routes
+      - Wifi along a single trip
+      - Station wifi and captive portal reports
+
+legal:
+  license: AGPL-3.0-or-later
+
+maintenance:
+  type: community
+  contacts:
+    - name: Max Katz-Christy
+      email: maxkatzchristy@gmail.com
+
+localisation:
+  localisationReady: false
+  availableLanguages:
+    - en
