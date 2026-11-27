@@ -18,8 +18,8 @@ importers:
         specifier: github:gtfs-zone/gtfs-zone-vocab#v0.1.0
         version: https://codeload.github.com/gtfs-zone/gtfs-zone-vocab/tar.gz/21f57b8259d7023b40ee498120f76a48172249fd
       gtfs-zone-web-common:
-        specifier: github:gtfs-zone/gtfs-zone-web-common#v5.19.0
-        version: https://codeload.github.com/gtfs-zone/gtfs-zone-web-common/tar.gz/90a17c2a1b2518569826de16900a11599b84d7ee(@leeoniya/ufuzzy@1.0.19)(gtfs-realtime-bindings@1.1.1)(gtfs-zone-vocab@https://codeload.github.com/gtfs-zone/gtfs-zone-vocab/tar.gz/21f57b8259d7023b40ee498120f76a48172249fd)(jszip@3.10.2)(maplibre-gl@6.16.0)(papaparse@5.7.1)
+        specifier: github:gtfs-zone/gtfs-zone-web-common#v7.20.0
+        version: https://codeload.github.com/gtfs-zone/gtfs-zone-web-common/tar.gz/88413a8e08ef54cb0d4e27ca739fd9db79e46e63(@leeoniya/ufuzzy@1.0.19)(@maplibre/geojson-vt@6.3.0)(@maplibre/vt-pbf@4.3.3)(fflate@0.8.3)(gtfs-realtime-bindings@1.1.1)(gtfs-zone-vocab@https://codeload.github.com/gtfs-zone/gtfs-zone-vocab/tar.gz/21f57b8259d7023b40ee498120f76a48172249fd)(maplibre-gl@6.16.0)(papaparse@5.7.1)(pmtiles@4.5.0)(vitest@5.1.0(@types/node@24.19.4)(happy-dom@21.0.4)(vite@7.3.7(@types/node@24.19.4)(jiti@2.7.0)(lightningcss@1.33.0)(yaml@2.9.1)))(zod@4.6.7)
       jszip:
         specifier: ^3.10.2
         version: 3.10.2
@@ -919,9 +919,6 @@ packages:
   '@types/mdurl@2.0.0':
     resolution: {integrity: sha512-RGdgjQUZba5p6QEFAVx2OGb8rQDL/cPRG7GiedRzMcJ1tYnUANBncjbSB1NRGwbvjcPeikRABz2nshyPk1bhWg==}
 
-  '@types/node@24.19.2':
-    resolution: {integrity: sha512-93d49wCWJkCyN87MxLpNN6KXPCwFw7bVUg79mGUV1OS40JGWwVCr8n61DXCSqz7CV6/VfPkb7xec7uP2M+QHWQ==}
-
   '@types/node@24.19.4':
     resolution: {integrity: sha512-s04odlR3ksJrLu7QLi+pddkWLD0RmSbcP9KuWn2/ozQKAp/YgwBC/6x9kJj8yAzZnGPfxePm7zm7nysVPCRagw==}
 
@@ -1312,18 +1309,33 @@ packages:
     resolution: {gitHosted: true, integrity: sha512-2Slyy2TEwdreCTz+YxWb2oa7T3rRptxF76j3tp1sCfBwNOZBOKbvTO80Z22MauH9y6zOVWibt1OEzk3RHMcnWA==, tarball: https://codeload.github.com/gtfs-zone/gtfs-zone-vocab/tar.gz/21f57b8259d7023b40ee498120f76a48172249fd}
     version: 0.1.0
 
-  gtfs-zone-web-common@https://codeload.github.com/gtfs-zone/gtfs-zone-web-common/tar.gz/90a17c2a1b2518569826de16900a11599b84d7ee:
-    resolution: {gitHosted: true, integrity: sha512-f8fFt3/NGdcR220dbVf4NQQSaXEb5QeQ+eYyYbJwgfQ08XqU91/jxXXc5hyPMWaRIx5AnxLd3kS8sp0A2jfWsA==, tarball: https://codeload.github.com/gtfs-zone/gtfs-zone-web-common/tar.gz/90a17c2a1b2518569826de16900a11599b84d7ee}
-    version: 5.19.0
+  gtfs-zone-web-common@https://codeload.github.com/gtfs-zone/gtfs-zone-web-common/tar.gz/88413a8e08ef54cb0d4e27ca739fd9db79e46e63:
+    resolution: {gitHosted: true, integrity: sha512-Oi5gWkzpBIRXinkA1eqGDAAME2q5JakmHtH6n4M9i95r85owq3XkyBdc3yK93ogYOk9YdGRtpYCS2DRLbPWlTQ==, tarball: https://codeload.github.com/gtfs-zone/gtfs-zone-web-common/tar.gz/88413a8e08ef54cb0d4e27ca739fd9db79e46e63}
+    version: 7.20.0
     peerDependencies:
+      '@argos-ci/playwright': '*'
       '@leeoniya/ufuzzy': '*'
+      '@maplibre/geojson-vt': '*'
+      '@maplibre/vt-pbf': '*'
+      '@playwright/test': '*'
+      fflate: '*'
       gtfs-realtime-bindings: '*'
       gtfs-zone-vocab: '*'
-      jszip: '*'
-      maplibre-gl: '>=6.4.1 <7'
+      maplibre-gl: '>=6.11.2 <7'
       papaparse: '*'
+      pmtiles: '*'
+      vitest: '*'
+      zod: '*'
     peerDependenciesMeta:
+      '@argos-ci/playwright':
+        optional: true
+      '@playwright/test':
+        optional: true
       gtfs-realtime-bindings:
+        optional: true
+      pmtiles:
+        optional: true
+      vitest:
         optional: true
 
   happy-dom@21.0.4:
@@ -2545,11 +2557,6 @@ snapshots:
 
   '@types/mdurl@2.0.0': {}
 
-  '@types/node@24.19.2':
-    dependencies:
-      undici-types: 7.24.6
-    optional: true
-
   '@types/node@24.19.4':
     dependencies:
       undici-types: 7.24.6
@@ -2563,7 +2570,7 @@ snapshots:
 
   '@types/ws@8.18.2':
     dependencies:
-      '@types/node': 24.19.2
+      '@types/node': 24.19.4
     optional: true
 
   '@typescript-eslint/eslint-plugin@8.72.1(@typescript-eslint/parser@8.72.1(eslint@10.14.0(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.9.3))(eslint@10.14.0(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.9.3)':
@@ -2728,7 +2735,7 @@ snapshots:
 
   buffer-image-size@0.6.4:
     dependencies:
-      '@types/node': 24.19.2
+      '@types/node': 24.19.4
     optional: true
 
   cacheable@2.5.0:
@@ -2996,19 +3003,24 @@ snapshots:
 
   gtfs-zone-vocab@https://codeload.github.com/gtfs-zone/gtfs-zone-vocab/tar.gz/21f57b8259d7023b40ee498120f76a48172249fd: {}
 
-  gtfs-zone-web-common@https://codeload.github.com/gtfs-zone/gtfs-zone-web-common/tar.gz/90a17c2a1b2518569826de16900a11599b84d7ee(@leeoniya/ufuzzy@1.0.19)(gtfs-realtime-bindings@1.1.1)(gtfs-zone-vocab@https://codeload.github.com/gtfs-zone/gtfs-zone-vocab/tar.gz/21f57b8259d7023b40ee498120f76a48172249fd)(jszip@3.10.2)(maplibre-gl@6.16.0)(papaparse@5.7.1):
+  gtfs-zone-web-common@https://codeload.github.com/gtfs-zone/gtfs-zone-web-common/tar.gz/88413a8e08ef54cb0d4e27ca739fd9db79e46e63(@leeoniya/ufuzzy@1.0.19)(@maplibre/geojson-vt@6.3.0)(@maplibre/vt-pbf@4.3.3)(fflate@0.8.3)(gtfs-realtime-bindings@1.1.1)(gtfs-zone-vocab@https://codeload.github.com/gtfs-zone/gtfs-zone-vocab/tar.gz/21f57b8259d7023b40ee498120f76a48172249fd)(maplibre-gl@6.16.0)(papaparse@5.7.1)(pmtiles@4.5.0)(vitest@5.1.0(@types/node@24.19.4)(happy-dom@21.0.4)(vite@7.3.7(@types/node@24.19.4)(jiti@2.7.0)(lightningcss@1.33.0)(yaml@2.9.1)))(zod@4.6.7):
     dependencies:
       '@leeoniya/ufuzzy': 1.0.19
+      '@maplibre/geojson-vt': 6.3.0
+      '@maplibre/vt-pbf': 4.3.3
+      fflate: 0.8.3
       gtfs-zone-vocab: https://codeload.github.com/gtfs-zone/gtfs-zone-vocab/tar.gz/21f57b8259d7023b40ee498120f76a48172249fd
-      jszip: 3.10.2
       maplibre-gl: 6.16.0
       papaparse: 5.7.1
+      zod: 4.6.7
     optionalDependencies:
       gtfs-realtime-bindings: 1.1.1
+      pmtiles: 4.5.0
+      vitest: 5.1.0(@types/node@24.19.4)(happy-dom@21.0.4)(vite@7.3.7(@types/node@24.19.4)(jiti@2.7.0)(lightningcss@1.33.0)(yaml@2.9.1))
 
   happy-dom@21.0.4:
     dependencies:
-      '@types/node': 24.19.2
+      '@types/node': 24.19.4
       '@types/whatwg-mimetype': 3.0.2
       '@types/ws': 8.18.2
       buffer-image-size: 0.6.4
