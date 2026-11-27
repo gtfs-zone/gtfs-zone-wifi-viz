@@ -19,7 +19,7 @@ importers:
         version: https://codeload.github.com/gtfs-zone/gtfs-zone-vocab/tar.gz/21f57b8259d7023b40ee498120f76a48172249fd
       gtfs-zone-web-common:
         specifier: github:gtfs-zone/gtfs-zone-web-common#v5.19.0
-        version: https://codeload.github.com/gtfs-zone/gtfs-zone-web-common/tar.gz/90a17c2a1b2518569826de16900a11599b84d7ee(@leeoniya/ufuzzy@1.0.19)(gtfs-realtime-bindings@1.1.1)(gtfs-zone-vocab@https://codeload.github.com/gtfs-zone/gtfs-zone-vocab/tar.gz/21f57b8259d7023b40ee498120f76a48172249fd)(jszip@3.10.2)(maplibre-gl@6.16.0)(papaparse@5.7.0)
+        version: https://codeload.github.com/gtfs-zone/gtfs-zone-web-common/tar.gz/90a17c2a1b2518569826de16900a11599b84d7ee(@leeoniya/ufuzzy@1.0.19)(gtfs-realtime-bindings@1.1.1)(gtfs-zone-vocab@https://codeload.github.com/gtfs-zone/gtfs-zone-vocab/tar.gz/21f57b8259d7023b40ee498120f76a48172249fd)(jszip@3.10.2)(maplibre-gl@6.16.0)(papaparse@5.7.1)
       jszip:
         specifier: ^3.10.2
         version: 3.10.2
@@ -28,7 +28,7 @@ importers:
         version: 6.16.0
       papaparse:
         specifier: ^5.7.0
-        version: 5.7.0
+        version: 5.7.1
       pmtiles:
         specifier: ^4.5.0
         version: 4.5.0
@@ -1611,8 +1611,8 @@ packages:
   pako@1.0.11:
     resolution: {integrity: sha512-4hLB8Py4zZce5s4yd9XzopqwVv/yGNhV1Bl8NTmCq1763HeK2+EwVTv+leGeL13Dnh2wfbqowVPXCIO0z4taYw==}
 
-  papaparse@5.7.0:
-    resolution: {integrity: sha512-qBGxg/7Q3Kl9Wfhrz2Z74UnvnHTXLNG6jmKJFeBvP2+y4lV7So+7SR62+Zd47JvdrCkX+nDcnr0ObPzek/+6RA==}
+  papaparse@5.7.1:
+    resolution: {integrity: sha512-qOR+UDWv6D3hMxnWWOk0ZpBdCkd+kw5Yh7aXOaNSQU8A+73EA2bhW7EiUix/hY0yulUi5FRvt7PpYSI2VDvY0g==}
 
   path-exists@4.0.0:
     resolution: {integrity: sha512-ak9Qy5Q7jYb2Wwcey5Fpvg2KoAc/ZIhLSLOSBmRmygPsGwkVVt0fZa0qrtMz+m6tJTAHfZQ8FnmB4MG4LWy7/w==}
@@ -2996,13 +2996,13 @@ snapshots:
 
   gtfs-zone-vocab@https://codeload.github.com/gtfs-zone/gtfs-zone-vocab/tar.gz/21f57b8259d7023b40ee498120f76a48172249fd: {}
 
-  gtfs-zone-web-common@https://codeload.github.com/gtfs-zone/gtfs-zone-web-common/tar.gz/90a17c2a1b2518569826de16900a11599b84d7ee(@leeoniya/ufuzzy@1.0.19)(gtfs-realtime-bindings@1.1.1)(gtfs-zone-vocab@https://codeload.github.com/gtfs-zone/gtfs-zone-vocab/tar.gz/21f57b8259d7023b40ee498120f76a48172249fd)(jszip@3.10.2)(maplibre-gl@6.16.0)(papaparse@5.7.0):
+  gtfs-zone-web-common@https://codeload.github.com/gtfs-zone/gtfs-zone-web-common/tar.gz/90a17c2a1b2518569826de16900a11599b84d7ee(@leeoniya/ufuzzy@1.0.19)(gtfs-realtime-bindings@1.1.1)(gtfs-zone-vocab@https://codeload.github.com/gtfs-zone/gtfs-zone-vocab/tar.gz/21f57b8259d7023b40ee498120f76a48172249fd)(jszip@3.10.2)(maplibre-gl@6.16.0)(papaparse@5.7.1):
     dependencies:
       '@leeoniya/ufuzzy': 1.0.19
       gtfs-zone-vocab: https://codeload.github.com/gtfs-zone/gtfs-zone-vocab/tar.gz/21f57b8259d7023b40ee498120f76a48172249fd
       jszip: 3.10.2
       maplibre-gl: 6.16.0
-      papaparse: 5.7.0
+      papaparse: 5.7.1
     optionalDependencies:
       gtfs-realtime-bindings: 1.1.1
 
@@ -3339,7 +3339,7 @@ snapshots:
 
   pako@1.0.11: {}
 
-  papaparse@5.7.0: {}
+  papaparse@5.7.1: {}
 
   path-exists@4.0.0: {}
 
